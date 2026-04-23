@@ -1,0 +1,1 @@
+nats account info --server tls://natsgw.marketdispatch.com.au:4222 --user clientuser --password clientpassword

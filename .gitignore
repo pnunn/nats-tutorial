@@ -1,0 +1,23 @@
+# Binaries and IDEs
+bin/
+*.exe
+*.test
+*.prof
+.idea/
+.vscode/
+
+# NATS Credentials and Keys (CRITICAL)
+*.creds
+*.pem
+.env
+leafuser.creds
+clientuser.creds
+privkey.pem
+fullchain.pem
+
+# JetStream Data
+jsdata/
+/tmp/nats/
+
+# Go dependencies
+vendor/

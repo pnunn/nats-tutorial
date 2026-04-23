@@ -1,0 +1,42 @@
+{
+  "apps": {
+    "layer4": {
+      "servers": {
+        "nats_clients": {
+          "listen": [":4222"],
+          "routes": [
+            {
+              "handle": [
+                {
+                  "handler": "proxy",
+                  "upstreams": [
+                    {"dial": ["10.144.144.2:4222"]},
+                    {"dial": ["10.144.144.3:4222"]},
+                    {"dial": ["10.144.144.4:4222"]}
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "nats_leafnodes": {
+          "listen": [":7422"],
+          "routes": [
+            {
+              "handle": [
+                {
+                  "handler": "proxy",
+                  "upstreams": [
+                    {"dial": ["10.144.144.2:7422"]},
+                    {"dial": ["10.144.144.3:7422"]},
+                    {"dial": ["10.144.144.4:7422"]}
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
