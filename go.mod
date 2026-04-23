@@ -1,6 +1,6 @@
 module nats-tutorial
 
-go 1.20
+go 1.24.0
 
 require (
 	github.com/joho/godotenv v1.5.1
@@ -11,6 +11,6 @@ require (
 require (
 	github.com/klauspost/compress v1.17.2 // indirect
 	github.com/nats-io/nuid v1.0.1 // indirect
-	golang.org/x/crypto v0.18.0 // indirect
-	golang.org/x/sys v0.16.0 // indirect
+	golang.org/x/crypto v0.45.0 // indirect
+	golang.org/x/sys v0.38.0 // indirect
 )
